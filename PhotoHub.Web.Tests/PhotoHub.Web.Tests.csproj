@@ -4,7 +4,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D0078C0A-C94E-45BD-B7D7-EAAB4D857A18}</ProjectGuid>
+    <ProjectGuid>{E609CE83-B0F6-4A1F-B535-3D8F68011515}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PhotoHub.Web.Tests</RootNamespace>
@@ -40,6 +40,7 @@
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.Routing" />
   </ItemGroup>
   <ItemGroup>
@@ -50,6 +51,12 @@
   <ItemGroup>
     <Content Include="AuthoringTests.txt" />
     <Content Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PhotoHub.Web\PhotoHub.Web.csproj">
+      <Project>{3E399CA2-019A-4E9E-AB04-D2EA89E802E5}</Project>
+      <Name>PhotoHub.Web</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
